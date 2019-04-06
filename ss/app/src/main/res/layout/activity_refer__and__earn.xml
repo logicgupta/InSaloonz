@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    tools:context=".Refer.Refer_And_Earn">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/refer"
+        android:layout_height="250dp" />
+    <TextView
+        android:id="@+id/textRefer"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to share Referral Code with your friends and earn a 25% discount coupon once they signup and avail their free services .Your friend gets Free Haircut on min bill value of Rs 500 +100% cashback on first payment."
+        />
+    <TextView
+        android:id="@+id/referal_Code"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:text="Tap to share"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

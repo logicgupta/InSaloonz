@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:layout_height="120dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/saloon_Name_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="4dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:baselineAligned="false" android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/saloonPhotoImageView"
+                    android:layout_width="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:layout_height="90dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/saloonNameTextView"
+                        android:layout_width="match_parent"
+                        android:text="Saloon Name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/saloonAddressTextView"
+                        android:layout_width="match_parent"
+                        android:text="Saloon Address"
+                        android:stepSize="0.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <RatingBar
+                        android:id="@+id/saloonRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        style = "?android:attr/ratingBarStyleIndicator"
+                        android:layout_marginLeft="8dp"
+                        android:focusable="false"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.5" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

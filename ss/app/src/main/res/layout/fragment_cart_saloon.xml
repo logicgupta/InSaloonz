@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Cart.CartSaloon"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/imageViewCart"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/empty_cart" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/addItemCartRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <ProgressBar
+                android:id="@+id/loadCartProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:id="@+id/tax_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Tax"
+                android:textColor="#000000"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/taxValueTextView"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:text="Rs.50"
+                android:layout_weight="0.3"
+                android:layout_gravity="right|center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:background="#c0c0c0"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                android:id="@+id/total_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/totalValuePriceTextView"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_width="0dp"
+                    android:text="4500"
+                    android:textColor="#000000"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="right|center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/couponLayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editTextcouponCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:hint="Coupon Code"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/buttonApply"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_margin="4dp"
+                    android:textSize="14sp"
+                    android:text="APPLY"
+                    android:background="@drawable/apply_coupon"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:id="@+id/netPayableAmountTextView"
+                android:layout_width="match_parent"
+                android:textSize="26sp"
+                android:textColor="#000000"
+                android:text="Payable Amount : "
+                android:fontFamily="@font/roboto_bold"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/payStep1Button"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="Pay"
+                android:visibility="gone"
+                android:background="@drawable/login_button_design"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

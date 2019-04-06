@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/design2"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="60dp"
+            android:src="@drawable/usermalelogo"
+            android:layout_height="60dp" />
+        <RatingBar
+            android:layout_margin="8dp"
+            android:id="@+id/reviewRatingBar"
+            android:layout_width="wrap_content"
+            style = "?android:attr/ratingBarStyleIndicator"
+            android:numStars="5"
+            android:theme="@style/customRatingBar"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/reviewsDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Desc"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/reviewsNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_margin="4dp"
+
+        android:textSize="16dp"/>
+</LinearLayout>

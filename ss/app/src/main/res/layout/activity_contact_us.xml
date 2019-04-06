@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Main.ContactUs">
+    <ImageView
+        android:layout_margin="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp" android:src="@mipmap/contact_img"/>
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+android:src="@mipmap/email2"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="logicgupta59@gmail.com"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:src="@mipmap/mobile_img"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="8963970412"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:src="@mipmap/address_logo"
+                android:layout_height="70dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Delhi"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

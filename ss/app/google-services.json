@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "223613673427",
+    "firebase_url": "https://esaloon-5fd69.firebaseio.com",
+    "project_id": "esaloon-5fd69",
+    "storage_bucket": "esaloon-5fd69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223613673427:android:3b4839d0bba76d3f",
+        "android_client_info": {
+          "package_name": "com.logistic.logic.e_saloon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223613673427-jtsej14uesmqff2s3n8b08samabrofog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logistic.logic.e_saloon",
+            "certificate_hash": "5b2eb66659651d4e0be4ad25f77bd6ebfd557aa4"
+          }
+        },
+        {
+          "client_id": "223613673427-god2eqqfm7hvrclfk3641gf3d4k1gj73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSXAbbFKVhqzwFdVTe2ALCgveIKlVhQXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223613673427-god2eqqfm7hvrclfk3641gf3d4k1gj73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

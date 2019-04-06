@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Profile_Info_Activity">
+
+    <ProgressBar
+        android:id="@+id/progress_barProfile"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+
+        android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:id="@+id/profile_Layout"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="240dp"
+
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="110dp"
+               android:background="@mipmap/profile1" />
+
+           <ImageView
+               android:id="@+id/editProfile"
+               android:layout_width="47dp"
+               android:layout_height="42dp"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_gravity="right"
+               android:layout_marginTop="11dp"
+               android:layout_marginEnd="11dp"
+               android:src="@drawable/ic_mode_edit_black_24dp" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+
+               android:id="@+id/setProfilePhoto"
+               android:layout_width="155dp"
+               android:layout_height="115dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               android:layout_gravity="center"
+               android:layout_marginStart="132dp"
+               android:layout_marginTop="95dp"
+               android:layout_marginEnd="124dp"
+               android:layout_marginBottom="60dp"
+               android:src="@drawable/usermalelogo" />
+
+           <TextView
+               android:id="@+id/user_name"
+               android:layout_width="258dp"
+               android:layout_height="46dp"
+
+               android:layout_alignParentStart="true"
+               android:layout_alignParentEnd="true"
+
+               android:layout_alignParentBottom="true"
+               android:layout_gravity="center"
+               android:layout_marginStart="84dp"
+               android:layout_marginEnd="69dp"
+               android:layout_marginBottom="21dp"
+               android:gravity="center"
+               android:text="Name"
+               android:textColor="#000000"
+               android:textSize="24sp"
+               android:textStyle="bold" />
+
+       </RelativeLayout>
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="8dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@mipmap/email_1"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_marginLeft="10dp"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:gravity="center"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Email id"
+                 android:layout_marginLeft="8dp"
+                 android:textStyle="bold"
+                 android:textSize="18sp"
+                 android:id="@+id/user_email"/>
+             <View
+                 android:layout_marginTop="15dp"
+                 android:background="#c0c0c0"
+                 android:layout_width="match_parent"
+                 android:layout_height="2dp"></View>
+
+         </LinearLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="8dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@mipmap/phone"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginLeft="10dp"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Mobile Number"
+                   android:layout_marginLeft="8dp"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:id="@+id/user_mobile"/>
+               <View
+                   android:layout_marginTop="15dp"
+                   android:background="#c0c0c0"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"></View>
+
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="8dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@mipmap/address_1"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginLeft="10dp"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Address"
+                   android:layout_marginLeft="8dp"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:id="@+id/user_address"/>
+               <View
+                   android:layout_marginTop="15dp"
+                   android:background="#c0c0c0"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"></View>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+</LinearLayout>

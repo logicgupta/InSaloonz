@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/updatePhoto"
+        android:src="@mipmap/add_new_user"
+        android:layout_width="117dp"
+        android:layout_height="104dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/updateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="Name"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/updateNumber"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:textColor="#000000"
+
+        />
+
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/updateAddress"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:hint="Address"
+        />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Update"
+
+        />
+
+
+</LinearLayout>

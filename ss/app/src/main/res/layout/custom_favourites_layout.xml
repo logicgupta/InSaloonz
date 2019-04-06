@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="170dp">
+        <RelativeLayout
+            android:id="@+id/customfavouritesImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/gradient_black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/customfavouritesNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:text="SALOON NAME"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/customfavouritesRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="115dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="211dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="21dp"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <TextView
+                android:id="@+id/saloonTimingTextView"
+                android:layout_width="160dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginBottom="51dp"
+                android:drawableLeft="@drawable/ic_watch_later_black_24dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="8dp"
+                android:gravity="center|left"
+                android:text="  Shop Timings"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/customfavouritesAddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="139dp"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/ic_place_black_24dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="8dp"
+                android:gravity="center|left"
+                android:text="  Shop Address"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/customfavouritesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="94dp"
+                app:mfb_animate_favorite="true"
+                app:mfb_bounce_duration="300"
+                app:mfb_favorite_image="@drawable/ic_favorite_black_24dp"
+                app:mfb_not_favorite_image="@drawable/ic_not_favorite_border_black_24dp"
+                app:mfb_rotation_angle="360"
+                app:mfb_rotation_duration="400"
+                app:mfb_type="heart" />
+        </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:context=".Payment.PaymentOptions">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:text="Pay "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/paymentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Details"
+            android:textSize="16dp"
+            android:clickable="true"
+            android:textStyle="italic|bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center|end"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/patymMode"
+        android:layout_width="match_parent"
+        android:text="Patym"
+        android:textSize="24dp"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        android:layout_height="50dp" />
+    <RadioButton
+        android:id="@+id/BhimMode"
+        android:layout_width="match_parent"
+        android:text="Paypal"
+        android:textSize="24dp"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        android:layout_height="50dp" />
+    <RadioButton
+        android:id="@+id/CreditMode"
+        android:layout_width="match_parent"
+        android:text="Rozarpay"
+        android:textSize="24dp"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        android:layout_height="50dp" />
+    <RadioButton
+        android:id="@+id/NetBankingMode"
+        android:layout_width="match_parent"
+        android:text="PayU "
+        android:textSize="24dp"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        android:layout_height="50dp" />
+</RadioGroup>
+    <Button
+        android:id="@+id/payMode"
+        android:layout_margin="40dp"
+        android:text="Pay"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logistic.logic.e_saloon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <activity android:name="com.logistic.logic.e_saloon.Categories.FemaleNailActivity"></activity>
+        <activity android:name="com.logistic.logic.e_saloon.Categories.MaleShaveActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.Login.Login_Activity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.Login.MobileVerification">
+            <meta-data
+                android:name="sendotp.key"
+                android:value="251109AmFZ6PTMgnhO5c388ec9" />
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.Login.ForgotPassword" />
+        <activity android:name="com.logistic.logic.e_saloon.Login.RegisterActivity" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.FAQs.FAQusetion"
+            android:label="Frequently Asked Questions">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.logistic.logic.e_saloon.Main.ContactUs"
+            android:label="Contact Us">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.logistic.logic.e_saloon.Profile.Profile_Info_Activity"
+            android:label="Profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.logistic.logic.e_saloon.Refer.Refer_And_Earn"
+            android:label="Refer and Earn">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.logistic.logic.e_saloon.Offers.Offers_Activity"
+            android:label="Offers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.Appointments.Appointments_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.Favourites.Favourites_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.logistic.logic.e_saloon.Categories.HairStyleFemaleActivity"
+            android:label="Female Hair" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.Categories.FemaleBeautyActivity"
+            android:label="Female MakeUp" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.Categories.FemaleSpaActivity"
+            android:label="Female Spa" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.Categories.MaleHairActivity"
+            android:label="Male Hair" />
+        <activity
+            android:name="com.logistic.logic.e_saloon.Categories.MaleBeautyActivity"
+            android:label="Male Beauty" />
+        <activity android:name="com.logistic.logic.e_saloon.Categories.MaleSpaActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.Categories.ListSaloonActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.SaloonList.SaloonListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.logistic.logic.e_saloon.Main.MainActivity" />
+        </activity>
+        <activity android:name="com.logistic.logic.e_saloon.BookSchedule.ScheduleTime" />
+        <activity android:name="com.logistic.logic.e_saloon.Payment.PaymentOptions" />
+        <activity android:name="com.logistic.logic.e_saloon.SaloonList.FilterActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.Reviews.ReviewsActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.CustomerChat.ChatActivity" />
+        <activity android:name="com.logistic.logic.e_saloon.BookingDetails.ConfirmBooking" />
+        <activity android:name="com.logistic.logic.e_saloon.Appointments.ApppointmentsDetails" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_7gkWqZRbkJ30bi" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4840604519539343~2976253607" />
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="https://insaloonz.000webhostapp.com/access_token.php" />
+
+        <activity android:name="com.logistic.logic.e_saloon.Intro.AppMainIntro" />
+    </application>
+
+</manifest>

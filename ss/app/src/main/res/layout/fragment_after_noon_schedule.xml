@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+    android:layout_margin="8dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BookSchedule.AfterNoonSchedule">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <GridView
+                android:id="@+id/afterGridView"
+                android:layout_width="match_parent"
+                android:numColumns="2"
+                android:layout_margin="8dp"
+                android:choiceMode="singleChoice"
+                android:layout_height="200dp">
+            </GridView>
+
+        <Button
+            android:id="@+id/checkAfterAvailableButton"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:text="Check Availablity"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bookAfterButton"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Book"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

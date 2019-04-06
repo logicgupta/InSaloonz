@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28B8C0"
+    android:orientation="vertical"
+    tools:context=".Intro.Intro2">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="110dp"
+        android:src="@mipmap/boarding2"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Appointments"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/macondoswashcaps"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="With MINUTES you can easily book any service ,stylist at any time                 you love :)"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto_light"
+         />
+
+
+
+</LinearLayout>

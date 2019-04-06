@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#28B8C0"
+    tools:context=".Intro.Intro2">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/boarding1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Service"
+        android:layout_gravity="center"
+        android:fontFamily="@font/macondoswashcaps"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+
+        android:gravity="center"
+        android:fontFamily="@font/roboto_light"
+        android:text="The best deal is here! We'll show you the coolest promo from your favourite     merchant in MINUTES"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+
+
+</LinearLayout>
